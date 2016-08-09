@@ -1,0 +1,25 @@
+For each project, set up a virtual environment:
+
+virtualenv venv
+
+In the main folder, we'll start the python environment
+
+. venv/bin/activate
+
+Later deactivate with
+
+deactivate
+
+Export the name of the app with
+
+export FLASK_APP=hello.py
+
+If you want debugging/automatic reloading of code, also do
+
+export FLASK_DEBUG=1
+
+But NEVER do this on a production server!  It is open to external attacks.
+
+Finally, run the server with
+
+flask run
